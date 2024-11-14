@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<header>
+    <style>
+      body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(142, 194, 194); 
+    border-radius: 15px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  
+}
+
+header{
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    border-radius: 15px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    width: 100%; 
+    box-sizing: border-box;
+}
+
+.menu{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+.menu-toggle{
+    display: none; /* Hide the checkbox */
+}
+
+.hamburger{
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.nav{
+    display: none;
+    background-color:rgb(142, 194, 194); ;
+    color: #fff;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 220px;
+    border-radius: 15px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav li{
+    border-bottom: 1px solid white;
+}
+
+.nav a{
+    display: block;
+    color:white;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav a:hover{
+    background-color: #0056b3;
+}
+
+
+.menu-toggle:checked + .hamburger + .nav {
+    display: block;
+}
+
+main{
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+h1{
+    margin-bottom: 15px;
+    font-size: 2.5em;
+    color: #fff;
+}
+
+p{
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px; 
+}
+
+#cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#cta h2 {
+    
+    margin-bottom: 10px;
+}
+
+#cta p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    background-color:   #007bff;  
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn:hover { 
+    background-color:#0056b3; 
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px; 
+    border-radius: 15px;
+    margin-top: 20px;
+    width: 100%; 
+}
+
+footer p {
+    color: #fff; 
+}
+    </style>
+</header>
+<body>
+    <div class="container">
+        <header>
+            <div class="menu">
+                
+                 <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                 <label for="menu-toggle" class="hamburger">&#x2630;</label>
+                 <nav class="nav">
+                    <ul>
+                        <li><a href="index.html">An Otter Essay</a></li>
+                        <li><a href="huckleberry.html">Huckleberry</a></li>
+                        <li><a href="cocmetics.html">Cosmetics Tubes</a></li>
+                        <li><a href="loginpage.html">Sign up page</a></li>
+                        <li><a href="wp-pusher.html">Wp Pusher Checkout</a></li>
+                        <li><a href="#assignment6">Assignment 6</a></li>
+                    </ul>
+                 </nav>
+            </div>
+            <h1>Welcome to my Assignments</h1>
+        </header>
+        <main>
+            <section id="intro">
+                
+                <p>This is my assignment landing page. click on the hamburger menu to access the assignments</p>
+                
+            </section>
+
+            <section id="cta">
+                <h2>Explore More</h2>
+                <p>Discover more about my assignments and projects. Click below to start exploring!</p>
+                <a href="https://github.com/Olubanke2" class="btn" target="_blank">Explore Now</a>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 My Assignments. All rights reserved.</p>
+        </footer>
+        
+    </div>
+
+</body>
+</html>

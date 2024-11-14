@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<header>
+    <style>
+      body{
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    height: 100%;
+}
+
+.container{
+    width: 70%;
+    margin: 50px auto;
+    
+}
+
+.contact-box{
+    background-color: #fff;
+    display: flex;
+    height: auto;
+}
+
+.contact-left{
+    flex: 1;
+    flex-basis: 70%;
+    padding: 40px 60px;
+    min-width: 300px;
+    background: #fff;
+}
+
+.contact-left h3{
+    font-weight: 600;
+    margin-bottom: 40px;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3); 
+}
+
+.contact-right{
+    flex: 1;
+    flex-basis: 30%;
+    padding: 40px;
+    background: #0056b3;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.8;
+}
+
+.contact-right h2,
+.contact-right p {
+    margin: 10px 0;
+}
+
+.contact-right ul {
+   
+    padding: 0;
+    margin: 10px 0;
+}
+
+.contact-right ul li {
+    margin-bottom: 5px;
+}
+
+.contact-right hr {
+    border: 1px solid #fff;
+    margin: 20px 0;
+}
+
+.input-row{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px ;
+}
+
+.input-row .input-group{
+    flex-basis: 45%;
+}
+
+.name-fields {
+    display: flex;
+    gap: 10px; 
+}
+
+.name-field {
+    flex: 1; 
+}
+
+.name-field input {
+    width: 100%; 
+}
+
+
+h5{
+    font-size: 14px;
+}
+
+input{
+    width: 100%;
+    background-color: rgb(214, 213, 213);
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+label{
+    margin: 6px;
+    display: block;
+}
+
+.btn{
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    width:100%;
+    
+}
+
+.btn:hover{
+    background-color: #0056b3;
+}
+    </style>
+</header>
+<body>
+    <div class="container">
+        
+
+        <div class="contact-box">
+            <div class="contact-left">
+                <h3>Checkout</h3>
+                <hr>
+                <form>
+
+                    <div class="input-row">
+                        <div class="input-group">
+                            <div>
+                                <h5>Your Basic Information</h5>
+                            </div>
+
+                            <div class="name-fields">
+                                <div class="name-field">
+                                <label for="fname">First Name</label>
+                                <input type="text" id="name" placeholder="Jane">
+                            </div>
+
+                            <div class="name-field">
+                                <label for="lname">Last Name</label>
+                                <input type="text" id="name" placeholder="Doe">
+                            </div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="input-group">
+                                <label for="email">E-mail</label>
+                                <input type="text" id="name" placeholder="janedoe@example.com">
+                        </div>
+                    </div>
+                </form>
+                <hr>
+
+                <form>
+
+                    <div class="input-row">
+                        <div class="input-group">
+                            <div>
+                                <h5>Your Payment Information</h5>
+                            </div>
+
+                            <div>
+                                <label for="card">Credit Card</label>
+                                <input type="card" id="name" placeholder="Card Number">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <hr>
+
+                <button class="btn">Buy WP Pusher</button>
+
+                <p style="font-size: 16px; color: #333;">Need any help? Don't hesitate to contact support.</p>
+
+            </div>
+            <div class="contact-right">
+                <p>Freelancer</p>
+
+                <h2><sup>$</sup>99<sub> / year</sub></h2>
+
+                <p>Automatically renews <br>after 1 year</p>
+
+                <ul>
+                    <li>Use on 5 client sites</li>
+                    <li>Private repositories</li>
+                    <li>Email support</li>
+                </ul>
+
+                <p>Need 20 client sites?<br>Switch to the Agency plan</p>
+
+                <hr>
+
+                <p>FTP is horrible to deal with.<br><span>WP Pusher solves that issue,<br>and the customer support is<br> awesome!</span></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
